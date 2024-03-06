@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite TS template</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>
+        Welcome to testing ground
+        <span> for Vite Next Generation Frontend Tooling </span>
+      </h1>
+    </div>
+
+    <div class="ts-ground"></div>
+    <section class="login-container">
+      <div class="login-card">
+        <div class="login-modal" id="loginModal">
+          <button id="loginCloseBtn">
+            <img src="./assets/x_icon.svg" alt="" />
+          </button>
+          <div class="active-login blur-content">
+            <h4>Welcome back</h4>
+            <p>Log into your Account</p>
+            <div class="input">
+              <div class="username-box">
+                <input
+                  type="email"
+                  id="userName"
+                  placeholder="Your email"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="username-info-error">
+                <p class="username-info"></p>
+              </div>
+            </div>
+
+            <div class="input">
+              <div class="password-box">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Your password"
+                />
+              </div>
+
+              <div class="password-info-error">
+                <p class="password-info"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-info">
+            <button id="loginBtn">Login</button>
+            <p class="error"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
